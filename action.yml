@@ -5,7 +5,7 @@ author: "Yunkun Huang"
 inputs:
   folder-name: 
     description: 'your source code folder'
-    required: true
+    required: false
     default: '.'
   arch: 
     description: 'your nas arch. use x86_apps or arm_apps'

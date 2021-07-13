@@ -16,4 +16,7 @@ jobs:
       - uses: htynkn/terra-master-packing-action@master
         with:
           folder-name: test/
-      - run: ls
+      - name: "Check tpk existence"
+        uses: andstor/file-existence-action@v1
+        with:
+          files: "demo_TOS_APP_1.0.0_x86_64.tpk"
