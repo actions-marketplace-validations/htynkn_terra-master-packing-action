@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 set -e
 # set -ex
@@ -17,7 +17,8 @@ FOLDER_NAME=$1
 ARCH=$2
 TPK_NAME=$3
 
-mv "$FOLDER_NAME" "/tool/$ARCH/$TPK_NAME"
+mkdir -p "/tool/$ARCH/$TPK_NAME"
+cp "$FOLDER_NAME" "/tool/$ARCH/$TPK_NAME"
 print_info "packing for folder \"$FOLDER_NAME\""
 print_info "use arch \"$ARCH\""
 

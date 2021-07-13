@@ -8,9 +8,9 @@ inputs:
     required: true
     default: '.'
   arch: 
-    description: 'your nas arch'
+    description: 'your nas arch. use x86_apps or arm_apps'
     required: false
-    default: 'x86_64'
+    default: 'x86_apps'
   tpk-name: 
     description: 'your tpk name'
     required: false
