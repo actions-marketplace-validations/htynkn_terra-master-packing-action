@@ -1,0 +1,12 @@
+[en-us]
+name = "Demo"
+auth = "htynkn"
+version = "1.0.0"
+descript = "a simple demo for terra-master tpk"
+
+[zh-cn]
+name = "示例"
+auth = "htynkn"
+version = "1.0.0"
+descript = "铁威马打包示例"
+

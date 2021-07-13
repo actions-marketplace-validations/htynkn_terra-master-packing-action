@@ -1,0 +1,25 @@
+name: 'Terra-Master packing action'
+description: 'Generate your own tpk for your Terra-Master Nas'
+author: "Yunkun Huang"
+
+inputs:
+  folder-name: 
+    description: 'your source code folder'
+    required: true
+    default: '.'
+  arch: 
+    description: 'your nas arch'
+    required: false
+    default: 'x86_64'
+  tpk-name: 
+    description: 'your tpk name'
+    required: false
+    default: 'demo'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.folder-name }}
+    - ${{ inputs.arch }}
+    - ${{ inputs.tpk-name }}
