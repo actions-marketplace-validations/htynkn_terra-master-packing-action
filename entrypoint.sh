@@ -18,7 +18,7 @@ ARCH=$2
 TPK_NAME=$3
 
 mkdir -p "/tool/$ARCH/$TPK_NAME"
-cp -r "$FOLDER_NAME" "/tool/$ARCH/$TPK_NAME"
+cp -r "$FOLDER_NAME/**" "/tool/$ARCH/$TPK_NAME"
 print_info "packing for folder \"$FOLDER_NAME\""
 print_info "use arch \"$ARCH\""
 
