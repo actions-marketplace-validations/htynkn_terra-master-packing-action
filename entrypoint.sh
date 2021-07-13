@@ -28,6 +28,6 @@ print_info 'start packing'
 
 ./makeapp "$ARCH/$TPK_NAME"
 
-cp "/tool/dist/$ARCH/$TPK_NAME/*.tpk" "$OUTPUT"
+mv /tool/dist/$ARCH/*.tpk "$OUTPUT"
 
 print_info 'packing success'
