@@ -17,8 +17,8 @@ FOLDER_NAME=$1
 ARCH=$2
 TPK_NAME=$3
 
-mkdir -p "/tool/$ARCH/$TPK_NAME"
-cp -r "$FOLDER_NAME/**" "/tool/$ARCH/$TPK_NAME"
+mkdir -p "/tool/$ARCH/"
+cp -r "$FOLDER_NAME/" "/tool/$ARCH/$TPK_NAME/"
 print_info "packing for folder \"$FOLDER_NAME\""
 print_info "use arch \"$ARCH\""
 
@@ -28,6 +28,6 @@ print_info 'start packing'
 
 ./makeapp "$ARCH/$TPK_NAME"
 
-cp "dist/$ARCH/*.tp" "$OUTPUT"
+cp "/tool/dist/$ARCH/*.tpk" "$OUTPUT"
 
 print_info 'packing success'
