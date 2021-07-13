@@ -13,6 +13,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: htynkn/htynkn/terra-master-packing-action@master
+      - uses: htynkn/terra-master-packing-action@master
         with:
           folder-name: test/
