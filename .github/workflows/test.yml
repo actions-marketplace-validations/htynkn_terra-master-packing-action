@@ -16,3 +16,4 @@ jobs:
       - uses: htynkn/terra-master-packing-action@master
         with:
           folder-name: test/
+      - run: ls
