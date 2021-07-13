@@ -2,6 +2,10 @@ name: 'Terra-Master packing action'
 description: 'Generate your own tpk for your Terra-Master Nas'
 author: "Yunkun Huang"
 
+branding:
+  icon: 'package'  
+  color: 'yellow'
+
 inputs:
   folder-name: 
     description: 'your source code folder'
